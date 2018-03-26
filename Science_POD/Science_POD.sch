@@ -139,14 +139,14 @@ F 3 "" H 7100 3350 60  0001 C CNN
 $EndComp
 Text Notes 6900 3700 0    60   ~ 0
 Thermister
-Text Notes 6850 2900 0    60   ~ 0
+Text Notes 7000 2950 0    60   ~ 0
 Moisture
 $Comp
 L R R1
 U 1 1 5AB45F03
 P 6900 4100
 F 0 "R1" V 6980 4100 50  0000 C CNN
-F 1 "100" V 6900 4100 50  0000 C CNN
+F 1 "10K" V 6900 4100 50  0000 C CNN
 F 2 "Resistors_SMD:R_0603_HandSoldering" V 6830 4100 50  0001 C CNN
 F 3 "" H 6900 4100 50  0001 C CNN
 	1    6900 4100
@@ -161,7 +161,7 @@ D1
 Text Label 6400 3900 1    60   ~ 0
 GND
 Text Notes 7250 3950 0    60   ~ 0
-(.25-1)*3.3V
+(.5-1)*3.3V
 Wire Wire Line
 	4750 2650 4750 2150
 Connection ~ 4750 2350
@@ -209,8 +209,6 @@ Wire Wire Line
 	5100 3800 5000 3800
 Wire Wire Line
 	5000 3800 5000 4050
-Wire Wire Line
-	5000 4050 6200 4050
 Wire Wire Line
 	6900 3950 6200 3950
 Connection ~ 6200 3950
@@ -270,4 +268,19 @@ Wire Wire Line
 	5950 3200 5950 3100
 Wire Wire Line
 	5950 3100 5100 3100
+$Comp
+L R R2
+U 1 1 5AB93F80
+P 5650 4050
+F 0 "R2" V 5730 4050 50  0000 C CNN
+F 1 "10K" V 5650 4050 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 5580 4050 50  0001 C CNN
+F 3 "" H 5650 4050 50  0001 C CNN
+	1    5650 4050
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5800 4050 6200 4050
+Wire Wire Line
+	5000 4050 5500 4050
 $EndSCHEMATC

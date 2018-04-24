@@ -116,52 +116,98 @@ F 3 "" H 5100 3600 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Molex_SL_2 U5
-U 1 1 5AB45C51
-P 7100 4000
-F 0 "U5" H 7150 3950 60  0001 C CNN
-F 1 "Molex_SL_2" H 7150 4250 60  0000 C CNN
-F 2 "MRDT_Connectors:MOLEX_SL_2" H 7100 3900 60  0001 C CNN
-F 3 "" H 7100 3900 60  0001 C CNN
-	1    7100 4000
-	1    0    0    -1  
-$EndComp
-$Comp
 L Molex_SL_3 U4
 U 1 1 5AB45D3D
-P 7100 3350
-F 0 "U4" H 7150 3300 60  0001 C CNN
-F 1 "Molex_SL_3" H 7150 3700 60  0000 C CNN
-F 2 "MRDT_Connectors:MOLEX_SL_3" H 7100 3350 60  0001 C CNN
-F 3 "" H 7100 3350 60  0001 C CNN
-	1    7100 3350
-	1    0    0    -1  
+P 4300 3250
+F 0 "U4" H 4350 3200 60  0001 C CNN
+F 1 "Molex_SL_3" H 4350 3600 60  0000 C CNN
+F 2 "MRDT_Connectors:MOLEX_SL_3" H 4300 3250 60  0001 C CNN
+F 3 "" H 4300 3250 60  0001 C CNN
+	1    4300 3250
+	-1   0    0    1   
 $EndComp
-Text Notes 6900 3700 0    60   ~ 0
+Text Notes 4100 3900 2    60   ~ 0
 Thermister
-Text Notes 7000 2950 0    60   ~ 0
+Text Notes 4100 3400 2    60   ~ 0
 Moisture
 $Comp
 L R R1
 U 1 1 5AB45F03
-P 6900 4100
-F 0 "R1" V 6980 4100 50  0000 C CNN
-F 1 "10K" V 6900 4100 50  0000 C CNN
-F 2 "Resistors_SMD:R_0603_HandSoldering" V 6830 4100 50  0001 C CNN
-F 3 "" H 6900 4100 50  0001 C CNN
-	1    6900 4100
+P 6250 4000
+F 0 "R1" V 6330 4000 50  0000 C CNN
+F 1 "10K" V 6250 4000 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 6180 4000 50  0001 C CNN
+F 3 "" H 6250 4000 50  0001 C CNN
+	1    6250 4000
 	1    0    0    -1  
 $EndComp
 Text Label 4500 2950 0    60   ~ 0
 +3V3
-Text Label 6050 4050 0    60   ~ 0
+Text Label 6000 3800 0    60   ~ 0
 Ain
-Text Label 6600 3700 0    60   ~ 0
+Text Label 5050 3700 0    60   ~ 0
 D1
-Text Label 6400 3900 1    60   ~ 0
+Text Label 5850 2150 2    60   ~ 0
 GND
-Text Notes 7250 3950 0    60   ~ 0
+Text Notes 4150 3810 2    60   ~ 0
 (.5-1)*3.3V
+Text Notes 4100 3510 2    60   ~ 0
+0-3V
+$Comp
+L C C2
+U 1 1 5AB4768B
+P 4300 2800
+F 0 "C2" H 4325 2900 50  0000 L CNN
+F 1 "10uF" H 4325 2700 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603_HandSoldering" H 4338 2650 50  0001 C CNN
+F 3 "" H 4300 2800 50  0001 C CNN
+	1    4300 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C1
+U 1 1 5AB476D8
+P 3650 2400
+F 0 "C1" H 3675 2500 50  0000 L CNN
+F 1 "10uF" H 3675 2300 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603_HandSoldering" H 3688 2250 50  0001 C CNN
+F 3 "" H 3650 2400 50  0001 C CNN
+	1    3650 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R2
+U 1 1 5AB93F80
+P 6050 4000
+F 0 "R2" V 6130 4000 50  0000 C CNN
+F 1 "10K" V 6050 4000 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 5980 4000 50  0001 C CNN
+F 3 "" H 6050 4000 50  0001 C CNN
+	1    6050 4000
+	-1   0    0    1   
+$EndComp
+$Comp
+L R R3
+U 1 1 5ABAE27A
+P 4950 2800
+F 0 "R3" V 5030 2800 50  0000 C CNN
+F 1 "330" V 4950 2800 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 4880 2800 50  0001 C CNN
+F 3 "" H 4950 2800 50  0001 C CNN
+	1    4950 2800
+	-1   0    0    1   
+$EndComp
+$Comp
+L LED D2
+U 1 1 5ABAE2C5
+P 4950 2400
+F 0 "D2" H 4950 2500 50  0000 C CNN
+F 1 "LED" H 4950 2300 50  0000 C CNN
+F 2 "Diodes_SMD:D_1206" H 4950 2400 50  0001 C CNN
+F 3 "" H 4950 2400 50  0001 C CNN
+	1    4950 2400
+	0    1    1    0   
+$EndComp
 Wire Wire Line
 	4750 2650 4750 2150
 Connection ~ 4750 2350
@@ -200,111 +246,16 @@ Wire Wire Line
 	4100 2950 4750 2950
 Connection ~ 4300 2950
 Wire Wire Line
-	5950 3700 6800 3700
-Wire Wire Line
-	6900 3850 6800 3850
-Wire Wire Line
-	6800 3850 6800 3700
-Wire Wire Line
-	5100 3800 5000 3800
-Wire Wire Line
-	5000 3800 5000 4050
-Wire Wire Line
-	6900 3950 6200 3950
-Connection ~ 6200 3950
-Wire Wire Line
-	6400 2150 6400 4250
-Wire Wire Line
-	6400 4250 6900 4250
-Wire Wire Line
 	4750 2950 4750 3200
 Wire Wire Line
 	4750 3200 5100 3200
 Wire Wire Line
 	5100 3200 5100 3100
-Connection ~ 6400 3300
-Wire Wire Line
-	6100 3200 6100 3600
-Wire Wire Line
-	6100 3600 5950 3600
-Wire Wire Line
-	5950 3300 6900 3300
-Wire Wire Line
-	6900 3200 6100 3200
-Wire Wire Line
-	6200 4050 6200 3450
-Wire Wire Line
-	6200 3450 6750 3450
-Wire Wire Line
-	6750 3450 6750 3100
-Wire Wire Line
-	6750 3100 6900 3100
-Text Notes 7300 3200 0    60   ~ 0
-0-3V
-$Comp
-L C C2
-U 1 1 5AB4768B
-P 4300 2800
-F 0 "C2" H 4325 2900 50  0000 L CNN
-F 1 "10uF" H 4325 2700 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0603_HandSoldering" H 4338 2650 50  0001 C CNN
-F 3 "" H 4300 2800 50  0001 C CNN
-	1    4300 2800
-	1    0    0    -1  
-$EndComp
-$Comp
-L C C1
-U 1 1 5AB476D8
-P 3650 2400
-F 0 "C1" H 3675 2500 50  0000 L CNN
-F 1 "10uF" H 3675 2300 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0603_HandSoldering" H 3688 2250 50  0001 C CNN
-F 3 "" H 3650 2400 50  0001 C CNN
-	1    3650 2400
-	1    0    0    -1  
-$EndComp
 Connection ~ 4300 2650
 Wire Wire Line
 	5950 3200 5950 3100
 Wire Wire Line
 	5950 3100 5100 3100
-$Comp
-L R R2
-U 1 1 5AB93F80
-P 5650 4050
-F 0 "R2" V 5730 4050 50  0000 C CNN
-F 1 "10K" V 5650 4050 50  0000 C CNN
-F 2 "Resistors_SMD:R_0603_HandSoldering" V 5580 4050 50  0001 C CNN
-F 3 "" H 5650 4050 50  0001 C CNN
-	1    5650 4050
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	5800 4050 6200 4050
-Wire Wire Line
-	5000 4050 5500 4050
-$Comp
-L R R3
-U 1 1 5ABAE27A
-P 4950 2800
-F 0 "R3" V 5030 2800 50  0000 C CNN
-F 1 "330" V 4950 2800 50  0000 C CNN
-F 2 "Resistors_SMD:R_0603_HandSoldering" V 4880 2800 50  0001 C CNN
-F 3 "" H 4950 2800 50  0001 C CNN
-	1    4950 2800
-	-1   0    0    1   
-$EndComp
-$Comp
-L LED D2
-U 1 1 5ABAE2C5
-P 4950 2400
-F 0 "D2" H 4950 2500 50  0000 C CNN
-F 1 "LED" H 4950 2300 50  0000 C CNN
-F 2 "Diodes_SMD:D_1206" H 4950 2400 50  0001 C CNN
-F 3 "" H 4950 2400 50  0001 C CNN
-	1    4950 2400
-	0    1    1    0   
-$EndComp
 Wire Wire Line
 	4950 2250 4950 2150
 Connection ~ 4950 2150
@@ -313,4 +264,63 @@ Wire Wire Line
 Wire Wire Line
 	4950 2950 4950 3200
 Connection ~ 4950 3200
+Wire Wire Line
+	4500 3300 5100 3300
+Wire Wire Line
+	5050 3300 5050 2150
+Connection ~ 5050 2150
+Wire Wire Line
+	4500 3850 5000 3850
+Connection ~ 5050 3300
+Wire Wire Line
+	6050 3800 5950 3800
+Wire Wire Line
+	6050 4250 6050 4150
+Wire Wire Line
+	6050 3800 6050 3850
+Wire Wire Line
+	5000 3700 5100 3700
+Wire Wire Line
+	6250 4250 6250 4150
+Connection ~ 6050 4250
+Wire Wire Line
+	6250 3850 6250 2700
+Wire Wire Line
+	6250 2700 5050 2700
+Connection ~ 5050 2700
+Wire Wire Line
+	5000 3850 5000 3700
+Wire Wire Line
+	4750 3500 4750 4250
+Wire Wire Line
+	4500 3500 4750 3500
+Wire Wire Line
+	4900 3600 5100 3600
+Wire Wire Line
+	4900 3600 4900 3400
+Wire Wire Line
+	4900 3400 4500 3400
+Text Label 5050 3600 0    60   ~ 0
+D2
+Wire Wire Line
+	4750 4250 6250 4250
+$Comp
+L Molex_SL_3 U5
+U 1 1 5ADFD895
+P 4300 3700
+F 0 "U5" H 4350 3650 60  0001 C CNN
+F 1 "Molex_SL_3" H 4350 4050 60  0000 C CNN
+F 2 "MRDT_Connectors:MOLEX_SL_3" H 4300 3700 60  0001 C CNN
+F 3 "" H 4300 3700 60  0001 C CNN
+	1    4300 3700
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4500 3950 4750 3950
+Connection ~ 4750 3950
+Wire Wire Line
+	4500 3750 4800 3750
+Wire Wire Line
+	4800 3750 4800 3300
+Connection ~ 4800 3300
 $EndSCHEMATC

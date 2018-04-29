@@ -176,17 +176,6 @@ F 3 "" H 3650 2400 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L R R2
-U 1 1 5AB93F80
-P 6050 4000
-F 0 "R2" V 6130 4000 50  0000 C CNN
-F 1 "10K" V 6050 4000 50  0000 C CNN
-F 2 "Resistors_SMD:R_0603_HandSoldering" V 5980 4000 50  0001 C CNN
-F 3 "" H 6050 4000 50  0001 C CNN
-	1    6050 4000
-	-1   0    0    1   
-$EndComp
-$Comp
 L R R3
 U 1 1 5ABAE27A
 P 4950 2800
@@ -275,9 +264,7 @@ Connection ~ 5050 3300
 Wire Wire Line
 	6050 3800 5950 3800
 Wire Wire Line
-	6050 4250 6050 4150
-Wire Wire Line
-	6050 3800 6050 3850
+	6050 3800 6050 4250
 Wire Wire Line
 	5000 3700 5100 3700
 Wire Wire Line

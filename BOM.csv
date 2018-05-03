@@ -1,0 +1,12 @@
+Id,Designator,Package,Quantity,Designation,Supplier and ref
+1,"C1,C2",C_0603_HandSoldering,2,10uF,
+2,L1,L_0603_HandSoldering,1,47uH,
+3,R1,R_0603_HandSoldering,1,10K,
+4,U1,MOLEX_SL_2,1,Molex_SL_2,
+5,U2,HTSOP-8-1EP_3.9x4.9mm_Pitch1.27mm,1,AP1059,
+6,U4,MOLEX_SL_3,1,Molex_SL_3,
+7,D1,C_0603_HandSoldering,1,D_Schottky,
+8,U3,ESP_8266_Breakout_Small,1,ESP_8266_Breakout_Small,
+11,D2,D_1206,1,LED,
+12,R3,R_0603_HandSoldering,1,330,
+13,U5,MOLEX_SL_3_Horizontal,1,Molex_SL_3,

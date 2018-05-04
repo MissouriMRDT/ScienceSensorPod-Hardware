@@ -126,7 +126,7 @@ F 3 "" H 4300 3250 60  0001 C CNN
 	1    4300 3250
 	-1   0    0    1   
 $EndComp
-Text Notes 4100 3900 2    60   ~ 0
+Text Notes 4100 4000 2    60   ~ 0
 Thermister
 Text Notes 4100 3400 2    60   ~ 0
 Moisture
@@ -135,7 +135,7 @@ L R R1
 U 1 1 5AB45F03
 P 6250 4000
 F 0 "R1" V 6330 4000 50  0000 C CNN
-F 1 "10K" V 6250 4000 50  0000 C CNN
+F 1 "4.7K" V 6250 4000 50  0000 C CNN
 F 2 "Resistors_SMD:R_0603_HandSoldering" V 6180 4000 50  0001 C CNN
 F 3 "" H 6250 4000 50  0001 C CNN
 	1    6250 4000
@@ -149,7 +149,7 @@ Text Label 5050 3700 0    60   ~ 0
 D1
 Text Label 5850 2150 2    60   ~ 0
 GND
-Text Notes 4150 3810 2    60   ~ 0
+Text Notes 4100 3900 2    60   ~ 0
 (.5-1)*3.3V
 Text Notes 4100 3510 2    60   ~ 0
 0-3V
@@ -258,8 +258,6 @@ Wire Wire Line
 Wire Wire Line
 	5050 3300 5050 2150
 Connection ~ 5050 2150
-Wire Wire Line
-	4500 3850 5000 3850
 Connection ~ 5050 3300
 Wire Wire Line
 	6050 3800 5950 3800
@@ -276,7 +274,7 @@ Wire Wire Line
 	6250 2700 5050 2700
 Connection ~ 5050 2700
 Wire Wire Line
-	5000 3850 5000 3700
+	5000 3700 5000 3950
 Wire Wire Line
 	4750 3500 4750 4250
 Wire Wire Line
@@ -292,22 +290,19 @@ D2
 Wire Wire Line
 	4750 4250 6250 4250
 $Comp
-L Molex_SL_3 U5
-U 1 1 5ADFD895
-P 4300 3700
-F 0 "U5" H 4350 3650 60  0001 C CNN
-F 1 "Molex_SL_3" H 4350 4050 60  0000 C CNN
-F 2 "MRDT_Connectors:MOLEX_SL_3" H 4300 3700 60  0001 C CNN
-F 3 "" H 4300 3700 60  0001 C CNN
-	1    4300 3700
-	-1   0    0    1   
+L Molex_SL_2 Conn1
+U 1 1 5AECCE00
+P 4300 4000
+F 0 "Conn1" H 4350 3950 60  0001 C CNN
+F 1 "Molex_SL_2" H 4350 4250 60  0000 C CNN
+F 2 "MRDT_Connectors:MOLEX_SL_2_Horizontal" H 4300 3900 60  0001 C CNN
+F 3 "" H 4300 3900 60  0001 C CNN
+	1    4300 4000
+	-1   0    0    -1  
 $EndComp
 Wire Wire Line
-	4500 3950 4750 3950
-Connection ~ 4750 3950
+	4500 3850 4750 3850
+Connection ~ 4750 3850
 Wire Wire Line
-	4500 3750 4800 3750
-Wire Wire Line
-	4800 3750 4800 3300
-Connection ~ 4800 3300
+	5000 3950 4500 3950
 $EndSCHEMATC
